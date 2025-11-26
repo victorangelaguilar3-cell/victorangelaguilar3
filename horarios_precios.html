@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horarios y precios de Combis Escárcega</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <img src="img/logo.jpg" alt="Transportes Escárcega Logo" class="logo-img">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">PROMOCIONES</a></li>
+                    <li><a href="#">TERMINALES</a></li>
+                    <li><a href="#">MIS VIAJES</a></li>
+                    <li><a href="#">AYUDA</a></li>
+                </ul>
+            </nav>
+            <button class="btn-login">
+                <i class="fas fa-user-circle"></i> Iniciar sesión
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container content-grid">
+            <section class="travel-details">
+                <h1>Horarios y precios de ida</h1>
+
+                <div class="options-bar">
+                    <div class="share-travel">
+                        <i class="fas fa-share-alt"></i> Compartir Viajes
+                    </div>
+                    <div class="filters-sort">
+                        <span class="filter-option" id="filterBtn"><i class="fas fa-filter"></i> Filtrar (<span id="filterCount">0</span>)</span>
+                        <span class="sort-option" id="sortBtn"><i class="fas fa-sort"></i> Ordenar: Primero en salir</span>
+                    </div>
+                </div>
+
+                <div class="trip-list">
+                    <!-- Primer viaje (Próximo a salir) -->
+                    <div class="trip-card upcoming-trip">
+                        <div class="status-indicator">
+                            <i class="fas fa-clock"></i> Próximo a salir
+                        </div>
+                        <div class="trip-info">
+                            <div class="operator-logo">
+                                <img src="img/logo.jpg" alt="Logo Combi Escárcega">
+                            </div>
+                            <div class="route-details">
+                                <div class="time-location">
+                                    <span class="time">03:00 h</span> <span class="location">Escárcega</span>
+                                </div>
+                                <div class="time-location">
+                                    <span class="time">05:15 h</span> <span class="location">Campeche</span>
+                                </div>
+                            </div>
+                            <div class="price-details">
+                                <div class="total-price">
+                                    Total <strong>$ 80</strong> <sup>MXN</sup>
+                                </div>
+                                <div class="approx-price">Precio total aproximado</div>
+                            </div>
+                        </div>
+                        <div class="trip-actions">
+                            <a href="#" class="action-link"><i class="far fa-heart"></i></a>
+                            <a href="#" class="action-link">Ver detalle <i class="fas fa-chevron-down"></i></a>
+                            <a href="#" class="action-link">Viaje local</a>
+                            <span class="remaining-seats">Quedan 17 asientos</span>
+                        </div>
+                    </div>
+
+                    <!-- Segundo viaje -->
+                    <div class="trip-card">
+                        <div class="trip-info">
+                            <div class="operator-logo">
+                                <img src="img/logo.jpg" alt="Logo Combi Escárcega">
+                            </div>
+                            <div class="route-details">
+                                <div class="time-location">
+                                    <span class="time">05:15 h</span> <span class="location">Escárcega</span>
+                                </div>
+                                <div class="time-location">
+                                    <span class="time">07:30 h</span> <span class="location">Campeche</span>
+                                </div>
+                            </div>
+                            <div class="price-details">
+                                <div class="total-price">
+                                    Total <strong>$ 80</strong> <sup>MXN</sup>
+                                </div>
+                                <div class="approx-price">Precio total aproximado</div>
+                            </div>
+                        </div>
+                        <div class="trip-actions">
+                            <a href="#" class="action-link"><i class="far fa-heart"></i></a>
+                            <a href="#" class="action-link">Ver detalle <i class="fas fa-chevron-down"></i></a>
+                            <a href="#" class="action-link">Viaje de paso</a>
+                            <span class="remaining-seats">Quedan 23 asientos</span>
+                        </div>
+                    </div>
+
+                    <!-- Tercer viaje -->
+                    <div class="trip-card">
+                        <div class="trip-info">
+                            <div class="operator-logo">
+                                <img src="img/logo.jpg" alt="Logo Combi Escárcega">
+                            </div>
+                            <div class="route-details">
+                                <div class="time-location">
+                                    <span class="time">07:00 h</span> <span class="location">Escárcega</span>
+                                </div>
+                                <div class="time-location">
+                                    <span class="time">09:15 h</span> <span class="location">Candelaria</span>
+                                </div>
+                            </div>
+                            <div class="price-details">
+                                <div class="total-price">
+                                    Total <strong>$ 90</strong> <sup>MXN</sup>
+                                </div>
+                                <div class="approx-price">Precio total aproximado</div>
+                            </div>
+                        </div>
+                        <div class="trip-actions">
+                            <a href="#" class="action-link"><i class="far fa-heart"></i></a>
+                            <a href="#" class="action-link">Ver detalle <i class="fas fa-chevron-down"></i></a>
+                            <a href="#" class="action-link">Viaje local</a>
+                            <span class="remaining-seats">Quedan 10 asientos</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="sidebar">
+                <div class="search-summary">
+                    <h2>01 Pasajero</h2>
+                    <h3>Boletos de combi de Escárcega a Campeche, Camp.</h3>
+                    <p>21 de Nov</p>
+                    <button class="btn-edit-search">Editar búsqueda</button>
+                    <div class="passenger-breakdown">
+                        <span>01 Adulto(s)</span> <span>$0.00</span>
+                    </div>
+                    <div class="total-cost">
+                        <span>TOTAL</span> <span>$80.00</span>
+                    </div>
+                    <button class="btn-confirm-selection">Confirmar selección</button>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

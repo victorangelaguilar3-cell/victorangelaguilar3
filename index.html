@@ -1,0 +1,175 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Transportes Escárcega - Combis Cómodas y Seguras</title> 
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Íconos opcionales --> 
+</head> 
+<body> 
+    <!-- Header y Navbar --> 
+    <header class="header"> 
+        <div class="container"> 
+            <div class="logo"> 
+                <img src="img/logo.jpg" alt="Transportes Escárcega" class="logo-img"> <!-- Reemplaza con tu URL del logo --> 
+            </div> 
+            <nav class="navbar"> 
+                <ul> 
+                    <li><a href="#rutas">Rutas</a></li> 
+                    <li><a href="#horarios">Horarios</a></li> 
+                    <li><a href="#servicios">Servicios</a></li> 
+                    <li><a href="#contacto">Contacto</a></li> 
+                </ul> 
+                <div class="auth-buttons"> 
+                    <button class="btn-login">Iniciar Sesión</button> 
+                    <button class="btn-register">Regístrate</button> 
+                </div> 
+            </nav> 
+        </div> 
+    </header> 
+ 
+    <!-- Sección Principal con Buscador --> 
+    <section class="hero"> 
+        <div class="hero-bg"></div> <!-- Placeholder para fondo de combi en paisaje --> 
+        <div class="container"> 
+            <h1>Tu Destino Favorito con Combis Escárcega</h1> 
+            <p>¿A dónde te vamos a llevar? Viaja cómodo y seguro desde Escárcega.</p> 
+            <form class="search-form" id="searchForm"> 
+                <div class="form-group"> 
+                    <label for="origen">Origen</label> 
+                    <input type="text" id="origen" placeholder="Desde Escárcega" required> 
+                </div> 
+                <div class="form-group"> 
+                    <label for="destino">Destino</label> 
+                    <input type="text" id="destino" placeholder="Hacia dónde viajas" required> 
+                </div> 
+                <div class="form-group"> 
+                    <label for="fecha">Fecha</label> 
+                    <input type="date" id="fecha" required> 
+                </div> 
+                <button type="submit" class="btn-search">Buscar Viaje</button> 
+            </form> 
+        </div> 
+    </section> 
+ 
+    <!-- Rutas Recomendadas --> 
+    <section class="recomendados" id="rutas"> 
+        <div class="container"> 
+            <h2>Rutas Recomendadas</h2> 
+            <div class="cards-grid" id="cardsSlider"> 
+                <div class="card"> 
+                    <img src="img/Campeche.jpg" alt="Ruta a Campeche"> 
+                    <h3>Escárcega - Campeche</h3> 
+                    <p>Viaja al puerto más grande del país en solo 2 horas. Precio desde $332.</p> 
+                </div> 
+                <div class="card"> 
+                    <img src="img/Escarcega.jpg" alt="Ruta a Escarcega"> 
+                    <h3>Campeche - Escarcega</h3> 
+                    <p>Descubre sitios de comercio. Salidas diarias.</p> 
+                </div>  
+            </div> 
+            <div class="slider-controls"> 
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button> 
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button> 
+            </div> 
+        </div> 
+    </section> 
+ 
+    <!-- Información Adicional --> 
+    <section class="info" id="servicios"> 
+        <div class="container"> 
+            <h2>Sobre Nosotros</h2> 
+            <p>Transportes Escárcega ofrece combis modernas y seguras para conectar Campeche y el sureste de México. Con 85 años de tradición, priorizamos el servicio y la calidad.</p> 
+            <div class="info-grid"> 
+                <div class="info-item"> 
+                    <i class="fas fa-bus"></i> 
+                    <h3>Nuestra Flota</h3> 
+                    <p>Combis cómodas con aire acondicionado y WiFi.</p> 
+                </div> 
+                <div class="info-item"> 
+                    <i class="fas fa-question-circle"></i> 
+                    <h3>Preguntas Frecuentes</h3> 
+                    <p>Consulta horarios, pagos y políticas de equipaje.</p> 
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+ 
+    <!-- Contacto --> 
+    <section class="contacto" id="contacto"> 
+        <div class="container"> 
+            <h2>Contacto</h2> 
+            <form id="contactForm"> 
+                <div class="form-group"> 
+                    <label for="nombre">Nombre</label> 
+                    <input type="text" id="nombre" required> 
+                </div> 
+                <div class="form-group"> 
+                    <label for="email">Email</label> 
+                    <input type="email" id="email" required> 
+                </div> 
+                <div class="form-group"> 
+                    <label for="mensaje">Mensaje</label> 
+                    <textarea id="mensaje" required></textarea> 
+                </div> 
+                <button type="submit" class="btn-submit">Enviar</button> 
+            </form> 
+            <div class="app-section"> 
+                <h3>Descarga la App Escárcega Móvil</h3> 
+                <p>Boletos en tu dispositivo y más...</p> 
+                <div class="app-links"> 
+                    <a href="#" class="app-link"><i class="fab fa-apple"></i> App Store</a> 
+                    <a href="#" class="app-link"><i class="fab fa-google-play"></i> Google Play</a> 
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+ 
+    <!-- Footer --> 
+    <footer class="footer"> 
+        <div class="container"> 
+            <div class="footer-grid"> 
+                <div class="footer-section"> 
+                    <h4>Experiencias Escárcega</h4> 
+                    <ul> 
+                        <li><a href="#">Blog Escárcega</a></li> 
+                        <li><a href="#">Renta de Combis</a></li> 
+                        <li><a href="#">Turismo en Campeche</a></li> 
+                    </ul> 
+                </div> 
+                <div class="footer-section"> 
+                    <h4>Nosotros te Ayudamos</h4> 
+                    <ul> 
+                        <li><a href="#">Factura Electrónica</a></li> 
+                        <li><a href="#">Métodos de Pago</a></li> 
+                        <li><a href="#">Aviso de Privacidad</a></li> 
+                        <li><a href="#">Términos y Condiciones</a></li> 
+                    </ul> 
+                </div> 
+                <div class="footer-section"> 
+                    <h4>Redes Sociales</h4> 
+                    <ul class="social-links"> 
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li> 
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li> 
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li> 
+                    </ul> 
+                </div> 
+                <div class="footer-section"> 
+                    <h4>Newsletter</h4> 
+                    <form class="newsletter-form"> 
+                        <input type="email" placeholder="E-mail" required> 
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button> 
+                    </form> 
+                    <p>De acuerdo con Términos y Condiciones y Aviso de Privacidad.</p> 
+                </div> 
+            </div> 
+            <div class="footer-bottom"> 
+                <p>&copy; 2025 Transportes Escárcega. Todos los derechos reservados.</p> 
+            </div> 
+        </div> 
+    </footer> 
+ 
+    <script src="script.js"></script> 
+</body> 
+</html> 
